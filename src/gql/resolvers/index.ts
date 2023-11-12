@@ -20,5 +20,15 @@ export const resolvers = {
       const result = db.categories.find((cg) => cg.id === parent.categoryId);
       return result;
     },
+    reviews: (parent: any, args: { categoryId: string }, context: any) => {
+      const result = db.reviews.filter((r) => r.productId === parent.id);
+      return result;
+    },
+  },
+  Category: {
+    products: (parent: any, args: { categoryId: string }, context: any) => {
+      const result = db.products.filter((pd) => pd.categoryId === parent.id);
+      return result;
+    },
   },
 };
