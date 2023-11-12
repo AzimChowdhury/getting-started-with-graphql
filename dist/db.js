@@ -7,7 +7,7 @@ const products = [
         price: 29.99,
         quantity: 30,
         onStock: true,
-        categoryId: "97b84bd6-c11b-435f-8943-17dc97694451",
+        categoryId: "1b6c2e31-2e03-4487-bedd-d1139c7e5571",
     },
     {
         id: "73b8ca8b-ca88-483e-99ea-2fedaf2a1dc1",
